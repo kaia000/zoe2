@@ -1,11 +1,69 @@
 <!doctype>
 <html>
 <head>
-    <meta>
+    <meta charset="utf-8">
     <title></title>
-    <style></style>
+<link rel="stylesheet" href="20201125.css">
 </head>
 <body>
+   
+      <section>
+      
+        <img src="ed-robertson-FDzRG30DeVM-unsplash.jpg" id="book1">
+
+    </section>
+       
+        <div class="article">
+            
+                <div class="content">
+
+                <h2>Amaizing Books are Here!</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque veniam soluta voluptas, accusantium laborum velit laudantium, assumenda quia, mollitia, similique dolore doloribus. Deleniti sint rem cupiditate, aliquam sapiente tenetur cumque aut nostrum suscipit vel quod autem, dolores aliquid et optio molestiae quaerat quo possimus consequuntur facere praesentium omnis eos eius mollitia. Sit cum minus aliquam obcaecati modi dolor tempore, quis pariatur. Officiis incidunt quos, ipsa ullam! Facere alias consequatur velit repellat, qui dolores dolorem, porro reprehenderit nesciunt, fuga tempora modi saepe ratione temporibus! Exercitationem, quos a reprehenderit maxime ducimus quod deserunt sit quasi voluptas, accusamus architecto error perferendis, ex expedita quis nam molestiae tenetur eius nemo assumenda, ullam magni minus? Nobis sed eligendi molestiae reprehenderit placeat consectetur vero nisi optio excepturi id necessitatibus corrupti ipsam expedita facilis quaerat mollitia saepe rem, tempora reiciendis, quod vitae magnam ipsum deserunt? Itaque unde vitae saepe est illo maxime, dolorem, nobis doloremque eos repellat cupiditate veritatis. Pariatur, nisi quis doloremque maxime, in nihil corrupti cumque, magnam consequatur exercitationed, facere fugit non fuga. Totam sed ipsa labore vero fugit! Nam laboriosam laborum et fuga id soluta consectetur velit neque consequuntur recusandae accusantium cumque laudantium nobis fugit ad voluptas veniam, ap Pariatur, nisi quis doloremque maxime, in nihil corrupti cumque, magnam consequatur exercitationed, facere fugit non fuga. Totam sed ipsa labore vero fugit! Nam laboriosam laborum et fuga id soluta consectetur velit ne</p>
+            </div>
+
+             <div class="content2">
+                <img src="taisiia-shestopal-X97mcr8NPDQ-unsplash.png" id="book2">
+            </div>
+
+
+
+
+           <div class="content3">
+                <img src="jonas-jacobsson-0FRJ2SCuY4k-unsplash.jpg" id="book3">
+            </div>
+
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+<script>
+   
+    gsap. to("#book2",{
+        scrollTrigger : {
+            scrub:true
+        }, y:180, 
+        x:500,
+        scale:3
+        
+        
+    })
     
+    gsap.to("#book1",{
+        scrollTrigger:{
+            scrub:true
+        }, y:100, scale:1.2
+        
+    })
+    
+    gsap.to(".content",{
+        scrollTrigger:{
+            scrub:true
+        }, x:-100
+    })
+    
+    
+    
+</script>
+
 </body>
 </html>
