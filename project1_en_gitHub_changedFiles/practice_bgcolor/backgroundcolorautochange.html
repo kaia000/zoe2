@@ -1,0 +1,42 @@
+<!doctype>
+<html>
+<head>
+   <script>
+        var i=0;
+       var j=0;
+       
+       function divchange(){
+           var divtag = document.getElementById("div1");
+           var bgcolor = ["black","yellow","pink","green","blue"];
+           var txtcolor = ["white","black","white","red","white"];
+           divtag.style.backgroundColor=bgcolor[i];
+           divtag.style.color=txtcolor[j];
+           i=(i+1)%bgcolor.length;
+           j=(j+1)%txtcolor.length;
+       }
+       setInterval(divchange,2000);
+    </script>
+    <style>
+        #div1{
+            border:1px solid gray;
+            background-color:powderblue;
+            height:350px;
+            width:400px;
+            border-radius: 50%;
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <center>
+       <hr>
+        <h1>on every few seconds/change background colors</h1>
+        <hr>
+        
+        <div id="div1">
+            
+            <h1>welcome to here</h1>
+        </div>
+    </center>
+</body>
+</html>

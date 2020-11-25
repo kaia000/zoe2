@@ -1,0 +1,51 @@
+<!doctype>
+<html>
+<head>
+    <meta>
+    <title></title>
+    <script>
+        var i=0;
+        var j=0;
+        
+//       function divChange() 이것도 같은뜻
+        
+            var divChange = function(){
+            var divtag = document.getElementById("div1");
+            
+            var bgColor = ["red","yellow","deeppink","navy"];
+            var txtColor = ["white","black","white","gray"];
+           
+            divtag.style.backgroundColor = bgColor[i];
+            divtag.style.color = txtColor[j];
+             i=(i+1)%bgColor.length;
+            j=(j+1)%txtColot.length;
+            
+        }
+        setInterval(divChange,2000);
+    
+        
+        
+    
+    </script>
+    
+    <style>
+        #div1{
+            font-size:2rem;
+            border:1px solid gray;
+            border-radius:50% 50%;
+            padding: 40px;
+            margin:auto;
+            text-align: center;
+            width:200px;
+            height:200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>background color text color</h1>
+    <div id="div1">
+        
+        Hello, world!
+    </div>
+</body>
+</html>

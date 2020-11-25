@@ -1,0 +1,178 @@
+<!doctype>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Adriahn's Classroom</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@500;600;700;800;900&family=Permanent+Marker&family=Ubuntu:ital,wght@0,500;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+   <script src="button.js"></script>
+    
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        
+        body{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        #container{
+            width:900px;
+            text-align: center;
+            margin-top:10px;
+            margin-bottom: 30px;
+        }
+        
+        #hoho{
+            width:313px;
+             position: relative;
+             top:30px;
+             margin: auto;
+            
+        }
+        
+        .my_list{
+            display: flex;
+            height:10px;
+            
+        }
+        .list{
+            position: relative;
+            bottom: 40px;
+            font:1.3rem 'Permanent Marker', cursive;
+            flex-grow:1;
+          transition:all 0.2s;
+
+        }
+        .shake{
+            border: 1px solid gray;
+            padding: 10px;margin-bottom: 30px;
+        }
+        .mybutton{
+            width:90px;
+            height:35px;
+            font:bold 1.3rem 'Big Shoulders Stencil Text', cursive;
+            margin-bottom: 20px;
+        }
+        footer a{
+            color:black;
+           font:bold 1.1rem 'Big Shoulders Stencil Text', cursive;
+
+        }
+        
+        header{
+            height: 200px;
+            border:1px solid gray;
+            
+            background-image: url('elena-mozhvilo-znhEe1cbbQE-unsplash.jpg');
+            background-size: cover;
+            background-color: peachpuff;
+            background-blend-mode:darken;
+            
+
+        }
+        
+      
+        
+        h1{
+            text-align:center;
+             font:bold 3rem 'Big Shoulders Stencil Text', cursive;
+            transition:all 0.2s;
+
+        }
+
+        a {
+            display:inline-block;
+            text-decoration: none;
+
+        }
+        
+        .list a{
+            color: palevioletred;
+
+
+            
+        }
+       
+        #hoho a{
+            color: whitesmoke;
+        }
+        
+        #hoho:hover{
+        transform:scaleY(1.1);
+
+        }
+        
+       .list:hover{
+         transform:translateX(2px);
+
+        }
+        
+        
+
+
+    </style>
+</head>
+<body>
+   <div id="container">
+        <header>
+            <h1 id="hoho"><a href="project1.html">Adriahn's Classes</a></h1>
+           
+
+        </header>
+        <section id="content">
+            <nav>
+               <div id="grid">
+                    <div class="my_list">
+                        <script>
+                            var classes = ["English","Spanish","Book Club"];
+                            var links = ["english.html","spanish.html","bookclub.html"];
+                            var i = 0;
+                            while(i < classes.length){
+                            document.write('<div class="list"><a href="'+links[i]+'">'+classes[i]+'</a></div>');
+                                  i = i+1;
+                                  }
+                        </script>
+                    </div>    
+                </div>
+            </nav>
+
+            <article>
+                
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur dolores laborum tempora ipsa corporis nulla assumenda nihil, ullam sapiente quos possimus architecto illum quidem debitis commodi, ratione quam enim, cumque neque sint, atque earum saepe. Debitis, aperiam rerum? Nostrum harum voluptatibus, distinctio suscipit hic, et explicabo pariatur beatae accusantium atque modi voluptate deserunt ullam consequatur omnis aliquid fugit nemo. Provident error nobis, neque! Quos sapiente, explicabo exercitationem odit labore fugiat, molestias magnam unde atque, modi odio sint rerum porro commodi! Autem, possimus distinctio. Rerum laboriosam debitis doloribus, quos! Inventore consequuntur, voluptatum iure nam? Culpa id iste consectetur aliquid explicabo dolor?</p>
+            
+                <div class="shake" style="color:deeppink">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, ipsum.
+                </div>
+               
+            </article>
+
+            <aside>
+                <input type="button" class="mybutton" value="night" onclick="
+               nightDayHandler(this);
+                
+                ">
+           
+           
+           
+            </aside>
+            
+
+        </section>
+        <footer><a id="foot" href="#.com">
+            Office_Address : 2nd Floor, 12-13, YongDuDong, Junggu, Daejeon
+        </a></footer>
+    </div>
+<!--
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Ubuntu', sans-serif;
+    -->
+</body>
+</html>

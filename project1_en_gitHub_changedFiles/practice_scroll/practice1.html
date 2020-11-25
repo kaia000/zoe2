@@ -1,0 +1,93 @@
+<!doctype>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="practice1.css">
+</head>
+<body>
+    <section>
+        <img src="bg.jpg" id="bg">
+        <img src="moon.png" id="moon">
+        <img src="cloud1.png" id="cloud1">
+        <img src="cloud2.png" id="cloud2">
+        <img src="jet.png" id="jet">
+        <img src="ironman.png" id="ironman">
+        <img src="hodu.png" id="hodu">
+    </section>
+    <div class="sec">
+        <div class="content">
+            <h2>My name is IronHodu and I'm not afraid of you.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis sint mollitia, eum aliquam nam omnis consequatur nostrum repudiandae nemo id ratione, provident velit maxime, eius expedita perspiciatis! Esse nobis perferendis dolorem perspiciatis voluptates totam, mollitia iusto aliquid repellendus, iure quod neque reiciendis eos, non corporis nihil architecto recusandae nostrum ad quos distinctio labore sed! In sunt nulla reiciendis ut, odio eligendi esse? Iure exercitationem suscipit molestias ex voluptatum possimus tempore voluptatem ut accusantium quasi, ipsum quas, totam impedit, sit earum, illo laboriosam voluptas nobis mollitia praesentium reiciendis in. Dignissimos, eius! Repellendus eligendi quis tenetur blanditiis fugit suscipit vitae eveniet delectus unde libero deserunt non dolorum, aliquid. Eaque, eius eligendi! Iure eaque atque sequi dignissimos tenetur debitis cum nulla nemo reprehenderit, ad placeat quas, ipsa explicabo excepturi perspiciatis voluptatum eligendi totam quibusdam! Fugit ullam magnam, repellat illo quas omnis in at quod, rerum amet voluptate nobis a, molestias reprehenderit, sunt vel harum! Voluptas magni, praesentium qui laudantium veniam atque facere maxime ipsa velit et tempora facilis dicta ratione nihil ipsam quis debitis unde asperiores fuga totam, nisi sed quas! Repudiandae impedit illum eligendi obcaecati cumque officia ducimus id, dicta velit aut aliquid mollitia beatae asperiores itaque molestias, culpa dolorem, error nihil!</p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.to("#bg",{
+            scrollTrigger:{
+                scrub: true
+            },
+            y:200,
+            scale:1.5
+
+        })
+        
+         gsap.to("#moon",{
+            scrollTrigger:{
+                scrub: true
+            },
+            x:-400,
+            scale:2
+
+        })
+        
+        gsap.to("#cloud1",{
+            scrollTrigger:{
+                scrub: true
+            },
+            x:-400,
+
+        })
+        
+        gsap.to("#cloud2",{
+            scrollTrigger:{
+                scrub: true
+            },
+            x: 300,
+
+        })
+        
+        
+        gsap.to("#jet",{
+            scrollTrigger:{
+                scrub: true
+            },
+            x: 1200,
+            y: -200,
+            scale: 4
+        })
+        
+        gsap.to("#hodu",{
+            scrollTrigger:{
+                scrub: true
+            },
+            x: -700,
+            y: -1900,
+            scale: 5,
+            rotate:-35
+        })
+        gsap.to("#ironman",{
+            scrollTrigger:{
+                scrub: true
+            },
+            x: -700,
+            y: -1800,
+            scale: 6
+        })
+    </script>
+
+
+
+</body>
+</html>

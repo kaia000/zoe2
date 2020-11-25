@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color:black;
+}
+
+
+.hodu{
+    position: relative;
+    
+    
+}
+
+.hodu h2{
+    color: white;
+    font-size:5rem;
+    width:400px;
+    
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.hodu h2:nth-child(1){
+    color:transparent;
+    -webkit-text-stroke:2px white;
+}
+
+.hodu h2:nth-child(2){
+    color:yellow;
+    animation: animate 3s ease-in-out infinite;
+}
+
+@keyframes animate{
+    0%, 100%{
+        clip-path: polygon(0 17%, 0% 100%, 68% 100%, 40% 84%, 19% 69%, 16% 53%, 25% 31%, 42% 20%, 65% 20%, 99% 34%, 89% 15%, 59% 3%, 34% 1%, 17% 5%);
+
+    }
+    50%{
+        clip-path: polygon(39% 27%, 68% 41%, 100% 100%, 99% 67%, 100% 39%, 99% 16%, 73% 3%, 55% 8%, 38% 3%, 16% 11%, 11% 25%, 1% 43%, 0 83%, 18% 44%);
+
+    }
+}
+

@@ -1,0 +1,108 @@
+<!doctype>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="20201123.css">
+    <script>
+        var Body = {
+            setBackgroundColor:function(color){
+            document.querySelector('body').style.backgroundColor = color;
+        },
+            setColor:function(color){
+                document.querySelector('body').style.color = color;
+            }
+                    
+                   }
+       
+        
+        
+        
+      
+        
+        function listsSetColor(color){
+            var alist = document.querySelectorAll('a');
+            for(var i=0; i<alist.length;i=i+1){
+            alist[i].style.color = color;
+            }
+        }
+        
+        function nightDayHandler(self){
+        
+            var target = document.querySelector('body');
+
+                if(self.value === 'night'){
+                Body.setBackgroundColor('black');
+                Body.setColor('white');            
+                self.value = 'day';
+
+            listsSetColor('powderblue');
+
+            }else {
+
+                Body.setBackgroundColor('white');
+                Body.setColor('black');            
+                self.value = 'night';
+
+            listsSetColor('deeppink');
+
+
+
+            }
+        }
+    </script>
+</head>
+<body>
+ <script>
+     var i = 0;
+    var hodu2 = function(){
+        var bgcolor = ["yellow","pink","red","powderblue"];
+        document.querySelector('body').style.backgroundColor = bgcolor[i];
+        
+        i=(i+1)%bgcolor.length;
+        
+    }
+    setInterval(hodu2,2000);
+     
+    </script>
+  <header>
+      <h1><a href="a.com">Web</a></h1>
+        <input type="button" value="night" onclick="
+     
+        
+       nightDayHandler(this);
+        
+        
+        ">  
+ 
+ 
+ 
+ 
+ </header>
+  <section>
+<!--
+    <div class="lists">
+        <ul>
+            <script>
+                var coworkers = ["HTML","CSS","JavaScript"];
+                var links = ["b.com","c.com","d.com"];
+                for(var i=0; i<coworkers.length; i=i+1){
+                    document.write('<li><a href="'+links[i]+'">'+coworkers[i]+'</a></li>');
+                }
+                
+                
+            </script>
+        </ul>
+    </div>
+-->
+      
+</section>
+    <h2 id="hodu">Adriahn</h2>
+    
+       <div class="container">
+           
+                   <div class="dot"></div>
+
+       </div>
+</body>
+</html>

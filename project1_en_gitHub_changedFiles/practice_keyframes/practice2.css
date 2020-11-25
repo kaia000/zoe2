@@ -1,0 +1,37 @@
+
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: beige;
+}
+
+#hodu{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    
+}
+
+#hodu h2{
+    margin: 0;
+    font-size:4rem;
+    color:transparent;
+    background-image: linear-gradient(to left,red,yellow,powderblue,deeppink);
+    animation: animate 10s linear infinite;
+    -webkit-background-clip:text;
+    -webkit-background-size:500%;
+    text-align: center;
+}
+@keyframes animate{
+    0%{
+        background-position:0 100%;
+    }
+    50%{
+        background-position:100% 0;
+    }
+    100%{
+        background-position:0 100%;
+    }
+}

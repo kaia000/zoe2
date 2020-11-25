@@ -1,0 +1,113 @@
+#boss{
+    background: #262239;
+    font-family: poppins;
+    margin: 0;
+    padding: 0;
+    transition:all 10s;
+}
+
+#div1{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width: 100%;
+}
+#div1 h2{
+    margin: 0;
+    line-height: 1;
+    font-size:4rem;
+    color: transparent;
+    text-transform: uppercase;
+    background-image:linear-gradient(to left, #2ecc71, #3498db, #9b59b6, #f39c12);
+    -webkit-background-clip:text;
+    animation: animate 8s linear infinite;
+    -webkit-background-size:500%;
+    background-size:500%;
+    text-align:center;
+    
+}
+
+#profile a{
+    display: inline-block;
+    font:bold 1.5rem 'Big Shoulders Stencil Text', cursive;
+    color:white;
+    text-decoration: none;
+    position:absolute;
+    left:50%;
+    transform:translate(-50%);
+    margin-top:15px;
+        transition:all 0.5s;
+
+}
+#profile a:hover{
+    transition:all 0.5s;
+    transform:translate(-45%);
+
+
+
+}
+@media(max-width:455px){
+    #boss{
+    background: #262239;
+    font-family: poppins;
+    margin: 0;
+    padding: 0;
+    transition:all 10s;
+}
+
+#div1{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width: 320px;
+}
+#div1 h2{
+    margin: 0;
+    line-height: 1;
+    font-size:4rem;
+    color: transparent;
+    text-transform: uppercase;
+    background-image:linear-gradient(to left, #2ecc71, #3498db, #9b59b6, #f39c12);
+    -webkit-background-clip:text;
+    animation: animate 8s linear infinite;
+    -webkit-background-size:500%;
+    background-size:500%;
+    text-align:center;
+    
+}
+
+#profile a{
+    display: inline-block;
+    font:bold 1.2rem 'Big Shoulders Stencil Text', cursive;
+    color:white;
+    text-decoration: none;
+    position:absolute;
+    left:50%;
+    transform:translate(-50%);
+    margin-top:15px;
+        transition:all 0.5s;
+
+}
+#profile a:hover{
+    transition:all 0.5s;
+    transform:translate(-45%);
+
+
+
+}
+}
+
+
+@keyframes animate{
+    0%{
+        background-position: 0 100%;
+    }
+    50%{
+        background-position: 100% 0;
+    }
+    100%{
+        background-position: 0 100%;
+    }
+}

@@ -1,0 +1,166 @@
+<!doctype>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adriahn's Classroom</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@500;600;700;800;900&family=Permanent+Marker&family=Ubuntu:ital,wght@0,500;1,500;1,700&display=swap" rel="stylesheet">
+     
+    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+   
+    <script src="button.js"></script>
+    <script>
+        var i = 0;
+        var bodychange = function(){
+            var bodytag = document.getElementById('#boss');
+            var bgcolor = ["yellow","red","powderblue","pink","beige"];
+            boss.style.backgroundColor = bgcolor[i];
+            i=(i+1)%bgcolor.length;
+        }
+        setInterval(bodychange,2000);
+    </script>
+    
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+          a {
+            display:inline-block;
+            text-decoration: none;
+
+        }
+        #earth{
+            position:relative;
+            bottom: 85px;
+            border:1px solid darkgray;
+            border-radius:50%;
+        }
+         #boss{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            background-color:'white';
+             transition:all 3s;
+             margin-top:100px; 
+             margin-bottom: 100px;
+            
+        }
+        #container{
+            width:100%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-top:10px;
+            margin-bottom: 30px;
+        }
+           
+        header{
+            height: 150px;
+
+        }
+        
+        
+        #hoho{
+           position: relative;
+            bottom: 300px;
+            
+        }
+          #hoho a{
+            color: whitesmoke;
+        }
+        
+        #hoho:hover{
+        transform:scaleY(1.2);
+
+        }
+         h1{
+            text-align:center;
+             font:bold 2.5rem 'Big Shoulders Stencil Text', cursive;
+            transition:all 0.5s;
+
+        }
+        
+        #parentList{
+            display: grid;
+            grid-template-rows:25px 25px 25px;
+        }
+        #linksList{
+            position:relative;
+            bottom:300px;
+             font:1.3rem 'Permanent Marker', cursive;
+          transition:all 0.2s;
+
+        }
+        #linksList a{
+            color:black;}
+        #linksList:hover{
+         transform:translateX(2px);
+
+        }
+    
+        
+        footer a{
+            color:black;
+           font:bold 1.1rem 'Big Shoulders Stencil Text', cursive;
+
+        }
+        .mybutton{
+            width:90px;
+            height:35px;
+            font:bold 1.3rem 'Big Shoulders Stencil Text', cursive;
+            margin-bottom: 20px;
+        }
+        #article, #foot{
+            position: relative;
+            top:60px;
+        }
+        
+    </style>
+    
+</head>
+
+<body id="boss">
+   <div id="container">
+        <header>
+             
+              <img id="earth" src="elena-mozhvilo-znhEe1cbbQE-unsplash.jpg" height="280px">
+              <h1 id="hoho" ><a href="project1.html">Adriahn's Classes</a></h1>
+
+             <div id="parentList">
+                  <script>
+                  var classes = ["English","Spanish","Book Club"];
+                  var links = ["english.html","spanish.html","bookclub.html"];
+                  var i = 0;
+                  while(i < classes.length){
+                    document.write('<div id="linksList"><a href="'+links[i]+'">'+classes[i]+'</a></div>');
+                    i = i+1;
+                }
+                </script>
+            </div>
+                
+          </header>
+          
+          <section id="article">
+              <p>os sequi est, maxime harum exercitationem consectetur aperiam, asperiores quas, temporibus impedit sapiente reiciendis fuga minus velit sunt eveniet. Dolor minus praesentium offiusto asperiores temporibus maxime repellendus similique natus ullam illum eveniet? Rerum laudantium saepe ducimus quae nemo, voluptatum perferendis fuga nulla, ex minus? At eum, atque illum minus reiciendis error nulla labore commodi vero beatae cupiditate accusantium. Adipisci, maiores. Tempora, quos, ratione! Doloribus consequuntur tempora corporis quam repudiandae, earum velit qui aspernatur ducimus quae quos nulla enim veritatis cupiditate fugiat, dolor saepe aliquam adipisci asperiores rem consectetur sit. Mollitia, quidem sunt. Voluptatibus porro provident nesciunt ipsam quasi, ducimus maxime sapiente iusto est a facere unde iure tenetur cumque eius quod quis at accusantium neque reprehenderit, quam obcaecati praesentium.</p>
+
+              <input type="button" class="mybutton" value="night" onclick="nightDayHandler(this);">
+            </section>
+            
+            <footer><a id="foot" href="#.com">
+                Office_Address : 2nd Floor, 12-13, YongDuDong, Junggu, Daejeon </a></footer>
+
+       </div>
+    </body>
+    
+    <!--
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Ubuntu', sans-serif;
+    -->
+</html>
+
+
+
+
+       
